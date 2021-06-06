@@ -1,0 +1,436 @@
+@font-face {
+  font-family: 'BBTreeGR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item{
+  padding: 0 2%;
+}
+
+header .nav-link{
+  font-weight: normal;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+color: #363537;
+}
+
+.navbar-brand{
+  margin: 0;
+}
+
+#pedia-what, #pedia-choice{
+  font-family: 'BBTreeGR';
+}
+
+.nav-line{
+  margin: 10px 0;
+  border: solid 0.5px #7F7F7F;
+}
+
+section{
+  margin: 0 7%;
+}
+
+#pedia-what{
+  padding-top: 18px;
+  padding-bottom: 5px;
+}
+
+h1{
+  font-size: 1.7vw;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+#pedia-what p{
+  font-size: 1.3vw;
+}
+
+#pedia-choice{
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.card-group{
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.card{
+  margin: 0 6vw;
+  border: none;
+}
+
+#dog{
+  cursor: pointer;
+}
+
+#cat{
+  cursor: pointer;
+}
+
+.card-footer{
+  color: white;
+  background-color: rgb(247, 146, 89);
+}
+
+.text-muted{
+  color: #000000!important;
+  font-size: 1.5em;
+}
+
+#pedia-contents{
+  padding-top: 2%;
+  margin: 0;
+  font-family: 'BBTreeGR';
+  font-size: 28px;
+  font-weight: bold;
+  position: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000000;
+    background-color: #FFEACD;
+}
+
+.align-items-start{
+  padding: 1.5% 7%;
+}
+
+.side-hr{
+  padding-right: 4%;
+  border-right: solid 0.5px #BFBFBF;
+}
+
+#pedia-contents .nav-link{
+  color: #000000;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: left;
+  width: 140px;
+}
+
+.bi-bookmark-heart{
+  font-size: 2.2vw;
+  padding-left: 4%;
+}
+
+.tab-content{
+  padding: 0 0;
+}
+
+.img-thumbnail{
+  width: 23vw;
+  border: none;
+}
+
+.tab-content img{
+  float: left;
+  position: relative;
+  bottom: 0.8vw;
+}
+
+.pedia-box{
+  display : flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 820px;
+}
+
+.pedia-box-name{
+  padding-left: 2vw;
+  padding-top: 10%;
+}
+
+h2{
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 5%;
+}
+
+.tab-content p{
+  font-size: 18px;
+  color: #888888;
+  font-weight: normal;
+  line-height: 200%;
+  width: 520px;
+}
+
+.tab-content .container{
+  width: 960px;
+  position: center;
+  padding: 0 7%;
+}
+
+.pedia-box2{
+  padding: 10% 4vw;
+  width: 820px;
+}
+
+.accordion{
+  font-weight: normal;
+  text-align: left;
+  width: 60vw;
+}
+
+.pedia-box2{
+  font-size: 18px;
+}
+
+.accordion-button{
+  font-size: 22px;
+}
+
+.accordion-button:not(.collapsed){
+  color: black;
+}
+
+.alert{
+  margin: 2% 0;
+  padding: 1.5% 2.5%;
+  width: 60vw;
+  background-color: #ffffff;
+  font-weight: normal;
+}
+
+
+.gallery-container{
+  border: #fff solid 3px;
+  background: #fff;
+}
+
+.main-img img, .imgs img{
+  width: 100%;
+}
+
+.imgs{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 3px;
+}
+
+.main-img img{
+  border-top: #fff solid 3px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn{
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+
+footer {
+  font-size: 1vw;
+  width: 100%;
+  height: 76px;
+  text-align: center;
+  color: white;
+  background-color: rgb(247, 146, 89);
+  margin-top: 3%;
+}
+
+footer p{
+  padding: 27px 0;
+}
+
+
+.card-footer{
+  background-color: #D9D9D9;
+}
+
+@media (max-width: 1600px){
+  #pedia-contents .nav-link{
+    font-size: 1.4vw;
+  }
+
+  h2{
+    font-size: 2vw;
+  }
+
+  .pedia-box-name p{
+    font-size: 1.2vw;
+  }
+
+  .accordion-button{
+    font-size: 1.6vw;
+  }
+
+  .accordion-body{
+    font-size: 1.4vw;
+  }
+}
+
+@media (max-width: 991.98px){
+  .container-fluid{
+    position: relative;
+    bottom: 45px;
+  }
+
+  h1{
+    font-size: 3.7vw;
+    font-weight: bold;
+    padding-bottom: 7px;
+  }
+  
+  #pedia-what p{
+    font-size: 3.3vw;
+  }
+
+  #pedia-contents{
+    height: 1050px;
+    margin-bottom: 10%;
+  }
+
+  .bi-bookmark-heart{
+    font-size: 5.2vw;
+  }
+
+  #pedia-contents .nav-link{
+    font-size: 16px;
+  }
+
+  .pedia-box-name{
+    position: relative;
+    top: 240px;
+    right: 500px;
+  }
+
+  .pedia-box img{
+    width: 220px;
+  }
+
+  #pedia-contents .container{
+    padding: 0 3%;
+  }
+
+  .pedia-box-name{
+    position: relative;
+    left: -170px;
+    top: 150px;
+  }
+
+  .pedia-box2{
+    position: relative;
+    right: 180px;
+    top: 150px;
+    width: 450px;
+    margin-right: 0;
+    font-size: 15px;
+  }
+
+  .accordion{
+    width: 80vw;
+  }
+  
+  #pedia-choice{
+    margin-bottom: 10%;
+  }
+
+  .pedia-box-name p{
+    font-size: 16px;
+    width: 440px;
+  }
+
+  .pedia-box h2{
+    font-size: 21px;
+    width: 200px;
+  }
+
+  .pedia-box{
+    display: inline;
+  }
+
+  .tab-content .container{
+    width: 220px;
+  }
+
+  .tab-content .container img{
+    position: relative;
+    left: 20px;
+    top: 20px;
+  }
+
+  .accordion-button{
+    font-size: 19px;
+  }
+
+  .alert{
+    width: 80vw;
+    font-size: 15px;
+  }
+
+  .side-hr{
+    z-index: 2;
+  }
+
+  #gallery{
+    height: 370px;
+  }
+
+  footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color: rgb(247, 146, 89);
+    margin-top: 3%;
+  }
+  
+  footer p{
+    padding: 27px 0;
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 650px){
+  #pedia-contents{
+    height: 1190px;
+  }
+
+  #pedia-contents .nav-link{
+    font-size: 3.2vw;
+  }
+
+  h2{
+    font-size: 3.3vw;
+  }
+
+  .pedia-box-name p{
+    font-size: 3vw;
+  }
+
+  .accordion-button{
+    font-size: 3.4vw;
+  }
+
+  .accordion-body{
+    font-size: 3.2vw;
+  }
+
+  .alert{
+    font-size: 3.1vw;
+  }
+}
+
+
+

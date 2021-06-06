@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'BBTreeGR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item{
+  padding: 0 2%;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+color: #363537;
+}
+
+.navbar-brand{
+  margin: 0;
+}
+
+#index-main{
+  text-align: center;
+  font-family: 'BBTreeGR';
+}
+
+#index-main .container{
+  margin: 0;
+  padding: 35px 0px;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.main-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10.6vw);
+  color: white;
+}
+
+h1{
+  font-size: 40px;
+  text-shadow: 2px 2px 5px #3B3838;
+}
+
+#index-main p{
+  font-size: 20px;
+  text-shadow: 2px 2px 3px #3B3838;
+}
+
+hr{
+  border: solid 3.7px white;
+  opacity: 60%;
+  width: 650px;
+  margin: 4% 0;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.5s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+footer {
+  font-size: 1vw;
+  width: 100%;
+  height: 76px;
+  text-align: center;
+  color: white;
+  background-color: rgb(247, 146, 89);
+  margin-top: 3%;
+}
+
+footer p{
+  padding: 27px 0;
+}
+
+@media (max-width: 991.98px){
+  .container-fluid{
+    position: relative;
+    bottom: 45px;
+  }
+
+  .main-text{
+   width: 400px;
+   position: relative;
+   bottom: 195px;
+  }
+
+  .diff{
+    visibility: hidden;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  .main-text p{
+    font-size: 10px;
+  }
+
+  .main-text hr{
+    width: 400px;
+  }
+
+  #index-main img{
+    height: 270px;
+  }
+
+  #index-main{
+    height: 520px;
+  }
+
+  #index-main .container{
+    height: 300px;
+  }
+
+  footer {
+    font-size: 0.8em;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color: rgb(247, 146, 89);
+    margin-top: 3%;
+  }
+  
+  footer p{
+    padding: 27px 0;
+    font-size: 2.5vw;
+  }
+
+}

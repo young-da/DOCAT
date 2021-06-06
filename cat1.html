@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOCAT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="quiz-style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-#FFFFFF" style="padding: 0.5%;">
+      <div class="container" style="display: block; text-align: center;">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/docat.png" alt="" width="180">
+        </a>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-#FFFFFF" style="padding: 0.2%;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"
+          style="font-family: 'Balsamiq Sans', cursive; font-size: 1.1em;">
+          <ul class="navbar-nav justify-content-center" style="width: 100%;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">IntroVideo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="pedia.html">Pedia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="community.html">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="team.html">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <hr class="nav-line">
+  <nav id="topMenu">
+    <ul>
+      <li class="topMenuLi">
+        <a class="menuLink" href="cat1.html">건강</a>
+        <ul class="submenu">
+          <li><a href="cat1.html" class="submenuLink longLink">퀴즈</a></li>
+          <li><a href="catres1.html" class="submenuLink longLink">정답</a></li>
+        </ul>
+      </li>
+      <li class="topMenuLi"> <a class="menuLink" href="cat2.html">생활</a>
+        <ul class="submenu">
+          <li><a href="cat2.html" class="submenuLink longLink">퀴즈</a></li>
+          <li><a href="catres2.html" class="submenuLink longLink">정답</a></li>
+        </ul>
+      </li>
+      <li class="topMenuLi"> <a class="menuLink" href="cat3.html">종</a>
+        <ul class="submenu">
+          <li><a href="cat3.html" class="submenuLink longLink">퀴즈</a></li>
+          <li><a href="catres3.html" class="submenuLink longLink">정답</a></li>
+        </ul>
+      </li>
+      <li class="topMenuLi"> <a class="menuLink" href="cat4.html">유머</a>
+        <ul class="submenu">
+          <li><a href="cat4.html" class="submenuLink longLink">퀴즈</a></li>
+          <li><a href="catres4.html" class="submenuLink longLink">정답</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="pedia-what">
+    <h1>Quiz (퀴즈)</h1>
+    <p><a href="dog1.html">반려견</a>과 <a href="cat1.html">반려묘</a> 관련 상식 퀴즈와 결과 안내 그리고 <a href="survey.html">설문조사</a></p>
+  </section>
+  <section id="quizsection">
+    <div class="grid">
+      <h1>반려묘 퀴즈<a href="./catres1.html"><img src="img/cat.png" alt="정답"></a></h1>
+      <div id="quiz">
+        <p id="question"></p>
+
+        <div class="buttons">
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+        </div>
+
+        <div id=pro>
+          <p id="progress">진행 정보</p>
+          <div id='result'></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    function Question(text, choice, answer) {
+      this.text = text;
+      this.choice = choice;
+      this.answer = answer;
+    }
+
+    function Quiz(questions) {
+      this.score = 0;
+      this.questions = questions;
+      this.questionIndex = 0;
+    }
+
+    Quiz.prototype.correctAnswer = function (answer) {
+      return answer == this.questions[this.questionIndex].answer;
+    }
+
+    let questions = [
+      new Question('사람에게 고양이 알레르기가 생기는 원인은?', ['고양이 털', '고양이의 침과 각질', '고양이의 귀지', '고양이의 귀여움'], '고양이의 침과 각질'),
+      new Question('어린 고양이의 이빨이 빠지면?', ['먹이가 잘못 된 것이다', '유치가 빠졌으니 영구치가 올라옴', '수시로 빠지고 다시 난다', '고양이는 이빨이 없다'], '유치가 빠졌으니 영구치가 올라옴'),
+      new Question('고양이의 전염병이 아닌것은 무엇일까?', ['범백', '허피스', '링웜', '치아흡수병변'], '치아흡수병변'),
+      new Question('최고 등급 사료를 고르시오', ['동결건조사료', '오가닉', '프리미엄', '홀리스틱'], '동결건조사료')
+    ];
+
+    let quiz = new Quiz(questions);
+
+    function updateQuiz() {
+      let question = document.getElementById('question');
+      let idx = quiz.questionIndex + 1;
+      let choice = document.querySelectorAll('.btn');
+
+      question.innerHTML = quiz.questions[quiz.questionIndex].text;
+
+      for (let i = 0; i < 4; i++) {
+        choice[i].innerHTML = quiz.questions[quiz.questionIndex].choice[i];
+      }
+
+      progress();
+    }
+
+    function progress() {
+      let progress = document.getElementById('progress');
+      progress.innerHTML = (quiz.questionIndex + 1) + '/ ' + quiz.questions.length;
+    }
+
+    let btn = document.querySelectorAll('.btn');
+
+    function checkAnswer(i) {
+      btn[i].addEventListener('click', function () {
+        let answer = btn[i].innerText;
+
+        if (quiz.correctAnswer(answer)) {
+          document.getElementById('result').innerText = "정답입니다.";
+          quiz.score++;
+        } else {
+          document.getElementById('result').innerText = "오답입니다. 답은 '" + answer + "'";
+        }
+
+
+        if (quiz.questionIndex < quiz.questions.length - 1) {
+          setTimeout(function () {
+            quiz.questionIndex++;
+            updateQuiz();
+            document.getElementById('result').innerText = "";
+          }, 1000);
+        } else {
+          result();
+        }
+      });
+    }
+
+    function result() {
+      let quizDiv = document.getElementById('quiz');
+      let per = parseInt((quiz.score * 100) / quiz.questions.length);
+      let txt = '<h2 id="score">당신의 점수: ' + per + '점' + '<br><br>' + ' </h2>';
+
+      quizDiv.innerHTML = txt;
+
+
+      if (per < 60) {
+        txt += '<h2>더 분발하세요!!<br>답안은 고양이 아이콘 클릭</h2>';
+        quizDiv.innerHTML = txt;
+      } else if (per >= 60 && per < 80) {
+        txt += '<h2>무난한 점수네요!!<br>답안은 고양이 아이콘 클릭</h2>'
+        quizDiv.innerHTML = txt;
+      } else if (per >= 80) {
+        txt += '<h2>훌륭합니다!!<br>답안은 고양이 아이콘 클릭</h2>'
+        quizDiv.innerHTML = txt;
+      }
+
+    }
+
+    for (let i = 0; i < btn.length; i++) {
+      checkAnswer(i);
+    }
+
+    updateQuiz();
+  </script>
+
+  <footer>
+    <p>
+      Copyright &copy; 2021, Made by TEAM "Docat"<br>
+    </p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

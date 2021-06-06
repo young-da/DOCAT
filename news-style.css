@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'BBTreeGR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+header .nav-link{
+  font-weight: normal;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+color: #363537;
+}
+
+.nav-line{
+  margin: 10px 0!important;
+  border: solid 0.5px #7F7F7F;
+}
+
+
+#sidebar {
+  font-family: 'BBTreeGR';
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  float: right;
+}
+
+#news-all{
+  font-family: 'BBTreeGR';
+}
+
+.nav-item{
+  padding: 0 2%;
+}
+
+.navbar-brand{
+  font-family: 'BBTreeGR';
+  margin: 0;
+}
+
+section{
+  font-family: 'BBTreeGR';
+  margin: 0 7%;
+}
+
+#pedia-what{
+  padding-top: 18px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+h1{
+  font-family: 'BBTreeGR';
+  font-size: 1.7vw;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+/* .px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+} */
+
+#pedia-what p{
+  font-family: 'BBTreeGR';
+  font-size: 1.3vw;
+}
+
+aside {
+  font-family: 'BBTreeGR';
+  width: 50%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+.ps-3{
+  font-size: 1.3vw;
+}
+
+.card-text{
+  font-size: 1.1vw;
+}
+
+/* 자바 */
+
+a.jcm-top {
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  text-align: center;
+  width: 4%;
+  height: 5%;
+  z-index: 999;
+  display: none; 
+}
+
+footer {
+  font-size: 1vw;
+  width: 100%;
+  height: 76px;
+  text-align: center;
+  color: white;
+  background-color: rgb(247, 146, 89);
+  margin-top: 3%;
+}
+
+footer p{
+  padding: 27px 0;
+}
+
+@media (max-width: 991.98px){
+  .container-fluid{
+    position: relative;
+    bottom: 45px;
+  }
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  a.jcm-top{
+    width: 60px;
+    bottom: 8%;
+  }
+
+  h1{
+    font-size: 3.7vw;
+  }
+
+  h4{
+    margin-left: 0;
+    padding: 0;
+  }
+
+  #pedia-what p{
+    font-size: 3.3vw;
+  }
+
+  footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color: rgb(247, 146, 89);
+    margin-top: 3%;
+  }
+  
+  footer p{
+    padding: 27px 0;
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 650px){
+  .ps-3{
+    font-size: 2.8vw;
+  }
+
+  .card{
+    width: 100%!important;
+    margin-bottom: 5%;
+  }
+
+  .card-text{
+    font-size: 2.7vw;
+  }
+}

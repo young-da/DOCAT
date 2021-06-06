@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOCAT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="NewBoardStyle.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- 상단 메뉴 -->
+    <nav class="navbar navbar-light bg-#FFFFFF" style="padding: 0.5%;">
+      <div class="container" style="display: block; text-align: center;">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/docat.png" alt="" width="180">
+        </a>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-#FFFFFF" style="padding: 0.2%;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"
+          style="font-family: 'Balsamiq Sans', cursive; font-size: 1.1em;">
+          <ul class="navbar-nav justify-content-center" style="width: 100%;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">IntroVideo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="pedia.html">Pedia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="community.html">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="team.html">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <hr class="nav-line"> -->
+  </header>
+  <hr>
+
+  <!-- 컨텐츠 안 NAV -->
+  <div class="under-nav">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="./community.html">이벤트 게시판</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./missing.html">유기 게시판</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Companion.html">반려 게시판</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 글 작성 -->
+  <div id="newboard_area">
+    <!-- <h1>글 작성</h1>
+    <h4>게시할 글을 작성하세요.</h4> -->
+
+    <section id="pedia-what">
+      <div class="container">
+        <h1>Community (게시판)</h1>
+        <p>현재 반려 게시판에 글을 작성하고 있습니다.</p>
+      </div>
+    </section>
+
+    <div class="container_board">
+      <form id="board">
+        <div class="input-group mb-3">
+          <button class="btn btn-light btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">게시판 선택</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="">이벤트 게시판</a></li>
+            <li><a class="dropdown-item" href="">유기 게시판</a></li>
+            <li><a class="dropdown-item" href="">반려 게시판</a></li>
+          </ul>
+          <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="반려 게시판">
+        </div>
+
+        <div class="input-title mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">제목</span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default" placeholder="제목을 입력하세요.">
+        </div>
+
+        <div class="input-content mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">내용</span>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 320px"></textarea>
+            <label for="floatingTextarea2">
+              내용을 입력하세요. /반려 동물 이름, 종, 성별, 나이 /장기 /특이사항</label>
+          </div>
+          <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">업로드</label>
+
+            <button style="border-radius: 10px; margin: 1px;" type="button" onclick="submit_event(); return 0;"
+              href="./Companion.html" class="btn btn-light col-3">
+              <a href="./Companion.html" style=" text-decoration:none; color: black;" );>제출</a>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- 푸터 -->
+  <footer>
+    <p>
+      Copyright &copy; 2021, Made by TEAM "Docat"<br>
+    </p>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
