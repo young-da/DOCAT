@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'BBTreeGR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff');
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item{
+  padding: 0 2%;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  color: #363537;
+  }
+
+.navbar-brand{
+  margin: 0;
+}
+
+.nav-line{
+  margin: 10px 0;
+  border: solid 0.5px #7F7F7F;
+}
+
+section{
+  margin: 0 7%;
+}
+
+#pedia-what{
+  padding-top: 18px;
+  padding-bottom: 5px;
+}
+
+h1{
+  font-family: 'BBTreeGR';
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+#pedia-what p{
+  font-family: 'BBTreeGR';
+  font-size: 1.1em;
+}
+
+#member{
+  float: left;
+  margin: 3% 5%;
+  height: auto;
+  width: 250px;
+  font-family: 'BBTreeGR';
+  background-color: #EEE9E9;
+  padding: 1%;
+}
+
+#member hr{
+  height: 2px;
+  border: none;
+  opacity: 1;
+  background-color: white;
+}
+
+#member .button_1{
+  float: right;
+  color: white;
+  background: black;
+  border-radius: 10px;
+  padding: 0 10px;
+  position: relative;
+  top: 0px;
+}
+
+.carousel-inner p{
+  padding: 0 5px;
+  display:inline-block;
+  color: white;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: 'BBTreeGR';
+}
+
+#carouselExampleCaptions{
+  width: 80%;
+  margin: auto;
+  margin-bottom: %;
+}
+
+#carouselExampleCaptions button{
+  background-color: black;
+}
+
+a.jcm-top {
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  text-align: center;
+  width: 4%;
+  height: 5%;
+  z-index: 999;
+  display: none; 
+}
+
+footer {
+  font-size: 1vw;
+  width: 100%;
+  height: 76px;
+  text-align: center;
+  color: white;
+  background-color: rgb(247, 146, 89);
+  margin-top: 3%;
+}
+
+footer p{
+  padding: 27px 0;
+}
+
+@media (max-width: 991.98px){
+  .container-fluid{
+    position: relative;
+    bottom: 45px;
+  }
+
+  h1{
+    font-size: 3.9vw;
+    font-weight: bold;
+  }
+
+  #pedia-what{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+
+  #pedia-what .container{
+    /* background-color: yellow; */
+    margin: auto;
+  }
+
+  #pedia-what .container p{
+    font-size: 3.7vw;
+  }
+
+  #pedia-what #member{
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  #pedia-what #member li{
+    font-size: 4.1vw;
+  }
+
+  #member .button_1{
+    float: right;
+    color: white;
+    background: black;
+    border-radius: 10px;
+    padding: 0 10px;
+    position: relative;
+    top: 0px;
+  }
+
+  #carouselExampleCaptions{
+    width: 100%;
+  }
+
+  a.jcm-top{
+    width: 60px;
+    bottom: 8%;
+  }
+
+  footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color: rgb(247, 146, 89);
+    margin-top: 3%;
+  }
+  
+  footer p{
+    padding: 27px 0;
+    font-size: 2.5vw;
+  }
+}
