@@ -36,7 +36,7 @@ section{
 
 #pedia-what{
   padding-top: 18px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
 h1{
@@ -48,17 +48,21 @@ h1{
 
 #pedia-what p{
   font-family: 'BBTreeGR';
-  font-size: 1.1em;
+  font-size: 1.5vw!important;
 }
 
 #member{
   float: left;
-  margin: 3% 5%;
+  margin: 3% 3%;
   height: auto;
   width: 250px;
   font-family: 'BBTreeGR';
   background-color: #EEE9E9;
   padding: 1%;
+}
+
+#pedia-what #member li{
+  font-size: 21px;
 }
 
 #member hr{
@@ -90,7 +94,7 @@ h1{
 #carouselExampleCaptions{
   width: 80%;
   margin: auto;
-  margin-bottom: %;
+  z-index: -1;
 }
 
 #carouselExampleCaptions button{
@@ -108,18 +112,26 @@ a.jcm-top {
   display: none; 
 }
 
+.wrap{
+  min-height: 100%;
+  position: relative;
+}
+
 footer {
-  font-size: 1vw;
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  text-align: center;
   width: 100%;
   height: 76px;
-  text-align: center;
+  background-color:rgb(247, 146, 89);
   color: white;
-  background-color: rgb(247, 146, 89);
   margin-top: 3%;
 }
 
 footer p{
   padding: 27px 0;
+  font-size: 14px;
 }
 
 @media (max-width: 991.98px){
@@ -145,7 +157,7 @@ footer p{
   }
 
   #pedia-what .container p{
-    font-size: 3.7vw;
+    font-size: 3.4vw!important;
   }
 
   #pedia-what #member{
@@ -177,17 +189,11 @@ footer p{
     bottom: 8%;
   }
 
-  footer {
-    width: 100%;
-    height: 80px;
-    text-align: center;
-    color: white;
-    background-color: rgb(247, 146, 89);
-    margin-top: 3%;
+  footer{
+    height: 70px;
   }
-  
+
   footer p{
-    padding: 27px 0;
-    font-size: 2.5vw;
+    padding: 14px;
   }
 }
