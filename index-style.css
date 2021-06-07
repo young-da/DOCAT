@@ -30,6 +30,8 @@ color: #363537;
 #index-main{
   text-align: center;
   font-family: 'BBTreeGR';
+  /* background-color: #363537; */
+  height: 480px;
 }
 
 #index-main .container{
@@ -86,18 +88,26 @@ hr{
   to {opacity: 1}
 }
 
+.wrap{
+  min-height: 100%;
+  position: relative;
+}
+
 footer {
-  font-size: 1vw;
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  text-align: center;
   width: 100%;
   height: 76px;
-  text-align: center;
+  background-color:rgb(247, 146, 89);
   color: white;
-  background-color: rgb(247, 146, 89);
   margin-top: 3%;
 }
 
 footer p{
   padding: 27px 0;
+  font-size: 14px;
 }
 
 @media (max-width: 991.98px){
@@ -131,28 +141,29 @@ footer p{
   #index-main img{
     height: 270px;
   }
-
-  #index-main{
-    height: 520px;
+  
+  footer{
+    height: 90px;
   }
 
-  #index-main .container{
-    height: 300px;
-  }
-
-  footer {
-    font-size: 0.8em;
-    width: 100%;
-    height: 80px;
-    text-align: center;
-    color: white;
-    background-color: rgb(247, 146, 89);
-    margin-top: 3%;
+  footer p{
+    padding: 14px;
   }
   
-  footer p{
-    padding: 27px 0;
-    font-size: 2.5vw;
+}
+
+@media (min-width: 1850px){
+  .main-text p{
+    font-size: 1.5vw!important;
+  }
+
+  #index-main hr{
+    width: 100%;
+  }
+
+  #index-main{
+    height: 900px;
+    /* background-color: yellow; */
   }
 
 }
