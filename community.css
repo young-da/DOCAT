@@ -1,0 +1,213 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+
+/* 아래 NAV 폰트 */
+@font-face {
+  src: url("./font/HancomMalangMalang-Regular.ttf");
+  font-family: "Malang-Regular";
+}
+@font-face {
+  font-family: 'BBTreeGR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav .nav-item .nav-link{
+  font-family: "Malang-Regular";
+}
+
+/* 바디 */
+body{
+  padding: 0;
+  margin: 0;
+}
+
+/* 네비 */
+.nav-item{
+  padding: 0 2%;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  color: #363537;
+  }
+
+.navbar-brand{
+  margin: 0;
+}
+
+.nav-line{
+  margin: 10px 0;
+  border: solid 0.5px #7F7F7F;
+}
+
+
+/* 컨텐츠 안 네비 */
+.under-nav{
+  padding: 15px;
+}
+
+.under-nav .nav{
+  /* background-color: #f3f3df;  */
+  width: 75%;
+  margin: auto;
+  border-radius : 5px;
+  padding: 5px;
+}
+
+.under-nav .nav .nav-item{
+  text-decoration: none;
+  top: auto;
+  width: auto;
+  flex-flow: row wrap;
+}
+
+.under-nav .nav .nav-item .nav-link{
+  color: rgb(247, 146, 89);
+}
+
+.under-nav .nav .nav-item .nav-link:focus{
+  font-weight: bold;
+}
+
+/* 게시판 */
+#board_area {
+  width: 70%;
+  height: 700px;
+  margin: auto;
+  font-family: 'BBTreeGR';
+}
+
+/* 시작 */
+section{
+  margin: 0 7%;
+}
+
+#pedia-what{
+  padding-top: 18px;
+  padding-bottom: 5px;
+  width: 100%;
+  margin: auto;
+}
+
+h1{
+  font-size: 1.7vw;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+#pedia-what p{
+  font-size: 1.3vw;
+}
+/* 끝 */
+
+.list-table {
+  width: 100%;
+  height: 500px;
+  background-color: #f3f3df;
+}
+.list-table thead th{
+	height:40px;
+	border-bottom:1px solid #CCC;
+	font-weight: bold;
+	font-size: 17px;
+  text-align: center;
+}
+.list-table thead .title{
+  text-decoration: none;
+  color: #363537;
+}
+.list-table tbody td{
+	text-align:center;
+	padding:10px 0;
+	border-bottom:1px solid #CCC; 
+  height:20px;
+	font-size: 14px 
+}
+#write_btn {
+  /* width: 80%; */
+	position: absolute;
+	margin-top:20px;
+	right: 15%;
+}
+#write_btn button{
+  background-color: #f3f3df;
+  color: #363537;
+  border-radius: 10%;
+  border-width: 1px;
+}
+
+ /* 푸터 */
+ .wrap{
+  min-height: 100%;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 76px;
+  background-color:rgb(247, 146, 89);
+  color: white;
+  margin-top: 3%;
+}
+
+footer p{
+  padding: 27px 0;
+  font-size: 14px;
+}
+
+/* 모바일 */
+@media (max-width: 991.98px){
+  .container-fluid{
+    position: relative;
+    bottom: 45px;
+    margin: auto;
+  }
+
+  .under-nav .nav{
+    width: 90%;
+  }
+
+  .nav .nav-item{
+    margin: auto;
+    padding: 0%;
+  }
+
+  #board_area{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 4vw;
+    font-weight: bold;
+    padding-bottom: 7px;
+  }
+
+  #pedia-what p{
+    font-size: 3vw;
+  }
+
+  footer{
+    height: 70px;
+  }
+
+  footer p{
+    padding: 14px;
+  }
+} 
+
+@media (min-width: 2550px){
+  #board_area{
+    height: 725px;
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+  }
+}
