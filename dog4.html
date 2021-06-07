@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOCAT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="quiz-style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <nav class="navbar navbar-light bg-#FFFFFF" style="padding: 0.5%;">
+        <div class="container" style="display: block; text-align: center;">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/docat.png" alt="" width="180">
+          </a>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-#FFFFFF" style="padding: 0.2%;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"
+            style="font-family: 'Balsamiq Sans', cursive; font-size: 1.1em;">
+            <ul class="navbar-nav justify-content-center" style="width: 100%;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">IntroVideo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pedia.html">Pedia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="education.html">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="community.html">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="team.html">Team</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <hr class="nav-line">
+    <section id="pedia-what">
+      <h1>Quiz (퀴즈)</h1>
+      <p><a href="dog1.html">반려견</a>과 <a href="cat1.html">반려묘</a> 관련 상식 퀴즈와 결과 안내 그리고 <a href="survey.html">설문조사</a></p>
+    </section>
+    <nav id="topMenu">
+      <ul>
+        <li class="topMenuLi">
+          <a class="menuLink" href="dog1.html">건강</a>
+          <ul class="submenu">
+            <li><a href="dog1.html" class="submenuLink longLink">퀴즈</a></li>
+            <li><a href="dogres1.html" class="submenuLink longLink">정답</a></li>
+          </ul>
+        </li>
+        <li class="topMenuLi"> <a class="menuLink" href="dog2.html">생활</a>
+          <ul class="submenu">
+            <li><a href="dog2.html" class="submenuLink longLink">퀴즈</a></li>
+            <li><a href="dogres2.html" class="submenuLink longLink">정답</a></li>
+          </ul>
+        </li>
+        <li class="topMenuLi"> <a class="menuLink" href="dog3.html">종</a>
+          <ul class="submenu">
+            <li><a href="dog3.html" class="submenuLink longLink">퀴즈</a></li>
+            <li><a href="dogres3.html" class="submenuLink longLink">정답</a></li>
+          </ul>
+        </li>
+        <li class="topMenuLi"> <a class="menuLink" href="dog4.html">유머</a>
+          <ul class="submenu">
+            <li><a href="dog4.html" class="submenuLink longLink">퀴즈</a></li>
+            <li><a href="dogres4.html" class="submenuLink longLink">정답</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+
+    <section id="quizsection">
+      <div class="grid">
+        <h1>반려견 퀴즈<a href="./dogres4.html"><img src="img/dog.png" alt="정답"></a></h1>
+        <div id="quiz">
+          <p id="question"></p>
+
+          <div class="buttons">
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+          </div>
+
+          <div id=pro>
+            <p id="progress">진행 정보</p>
+            <div id='result'></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function Question(text, choice, answer) {
+        this.text = text;
+        this.choice = choice;
+        this.answer = answer;
+      }
+
+
+      function Quiz(questions) {
+        this.score = 0;
+        this.questions = questions;
+        this.questionIndex = 0;
+      }
+
+      Quiz.prototype.correctAnswer = function (answer) {
+        return answer == this.questions[this.questionIndex].answer;
+      }
+
+      let questions = [
+        new Question('강아지들이 밥을 먹으러 우르르 달려가는 것을 뭐라고 할까요?', ['개회식', '배고픈 강아지', '달리는 강아지', '절실한 강아지'], '개회식'),
+        new Question('피곤할때 어울리면 좋은 개는?', ['피곤하개', '잠오개', '기지개', '졸리개'], '기지개'),
+        new Question('젖소와 강아지가 싸우면 누가 이기는가?', ['넌 졌소', '난 강하지', '젖소', '강아지'], '강아지'),
+        new Question('강아지가 사람을 가르친다면?', ['개인지도', '똑똑한강아지', '놀라운강아지', '스마트독'], '개인지도')
+      ];
+
+      let quiz = new Quiz(questions);
+
+      function updateQuiz() {
+        let question = document.getElementById('question');
+        let idx = quiz.questionIndex + 1;
+        let choice = document.querySelectorAll('.btn');
+
+        question.innerHTML = quiz.questions[quiz.questionIndex].text;
+
+        for (let i = 0; i < 4; i++) {
+          choice[i].innerHTML = quiz.questions[quiz.questionIndex].choice[i];
+        }
+
+        progress();
+      }
+
+      function progress() {
+        let progress = document.getElementById('progress');
+        progress.innerHTML = (quiz.questionIndex + 1) + '/ ' + quiz.questions.length;
+      }
+
+      let btn = document.querySelectorAll('.btn');
+
+      function checkAnswer(i) {
+        btn[i].addEventListener('click', function () {
+          let answer = btn[i].innerText;
+
+          if (quiz.correctAnswer(answer)) {
+            document.getElementById('result').innerText = "정답입니다.";
+            quiz.score++;
+          } else {
+            document.getElementById('result').innerText = "오답입니다. 답은 '" + answer + "'";
+          }
+
+
+          if (quiz.questionIndex < quiz.questions.length - 1) {
+            setTimeout(function () {
+              quiz.questionIndex++;
+              updateQuiz();
+              document.getElementById('result').innerText = "";
+            }, 1000);
+          } else {
+            result();
+          }
+        });
+      }
+
+      function result() {
+        let quizDiv = document.getElementById('quiz');
+        let per = parseInt((quiz.score * 100) / quiz.questions.length);
+        let txt = '<h2 id="score">당신의 점수: ' + per + '점' + '<br><br>' + ' </h2>';
+
+        quizDiv.innerHTML = txt;
+
+
+        if (per < 60) {
+          txt += '<h2>더 분발하세요!!<br>답안은 강아지 아이콘 클릭</h2>';
+          quizDiv.innerHTML = txt;
+        } else if (per >= 60 && per < 80) {
+          txt += '<h2>무난한 점수네요!!<br>답안은 강아지 아이콘 클릭</h2>'
+          quizDiv.innerHTML = txt;
+        } else if (per >= 80) {
+          txt += '<h2>훌륭합니다!!<br>답안은 강아지 아이콘 클릭</h2>'
+          quizDiv.innerHTML = txt;
+        }
+
+      }
+
+      for (let i = 0; i < btn.length; i++) {
+        checkAnswer(i);
+      }
+
+      updateQuiz();
+    </script>
+    <footer>
+      <p>
+        Copyright &copy; 2021, Made by TEAM "Docat"<br>
+      </p>
+    </footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
