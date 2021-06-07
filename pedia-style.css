@@ -484,6 +484,17 @@ footer p{
   }
 
   #pedia-choice{
-    height: 490px;
+    height: 510px;
+  }
+
+  #gallery{
+    height: 1200px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  #gallery{
+    height: 700px;
   }
 }
