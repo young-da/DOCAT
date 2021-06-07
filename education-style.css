@@ -1,0 +1,333 @@
+/* 아래 NAV 폰트 */
+@font-face {
+  src: url("font/HancomMalangMalang-Regular.ttf");
+  font-family: "Malang-Regular";
+}
+
+@font-face {
+  font-family: 'BBTreeGR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav .nav-item .nav-link{
+  font-family: "Malang-Regular";
+  font-size: 1.3vw;
+}
+
+.container {
+  font-family: 'BBTreeGR';
+}
+
+/* 바디 */
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 16px!important;
+}
+
+/* 네비 */
+.nav-item{
+  padding: 0 2.04%!important;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  color: #363537;
+  }
+
+.navbar-brand{
+  margin: 0;
+}
+
+#pedia-what{
+  padding-top: 18px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+#pedia-what h1{
+  font-family: 'BBTreeGR';
+  font-size: 1.7vw;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+#pedia-what p{
+  font-family: 'BBTreeGR';
+  font-size: 1.3vw;
+}
+
+#pedia-what{
+  margin: 0 7%;
+}
+
+.nav-line{
+  margin: 10px 0!important;
+  border: solid 0.5px #7F7F7F;
+}
+
+header hr{
+  box-sizing: inherit;
+}
+
+
+
+/* 컨텐츠 안 네비 */
+.under-nav{
+  padding: 15px;
+  margin-left: 0;
+}
+
+.under-nav .nav{
+  background-color: white; 
+  width: 70%;
+  margin: auto;
+  border-radius : 5px;
+  padding: 5px;
+}
+
+.under-nav .nav .nav-item{
+  text-decoration: none;
+  top: auto;
+  width: auto;
+  flex-flow: row wrap;
+}
+
+.under-nav .nav .nav-item .nav-link{
+  color: rgb(247, 146, 89);
+}
+
+.under-nav .nav .nav-item .nav-link:focus{
+  font-weight: bold;
+}
+
+ /* 푸터 */
+ .wrap{
+  min-height: 100%;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 76px;
+  background-color:rgb(247, 146, 89);
+  color: white;
+  margin-top: 3%;
+}
+
+footer p{
+  padding: 27px 0;
+  font-size: 14px;
+}
+
+
+/* 교육 */
+
+.highlight {
+  font-weight: bold;
+}
+
+
+.box {
+  border: white solid 1px;
+  padding: 30px;
+  margin: auto;
+}
+
+.box #pedia-what{
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+ul{
+margin:0;
+padding:0;
+list-style:none;
+}
+.heading.heading-icon {
+  display: block;
+  margin: auto;
+}
+.padding-lg {
+display: block;
+margin: auto;
+}
+.practice-area.padding-lg {
+  padding-bottom: 55px;
+  padding-top: 55px;
+}
+.practice-area .inner{ 
+   border:1px solid #999999; 
+ text-align:center; 
+ margin-bottom:28px; 
+ padding:40px 25px;
+}
+.our-webcoderskull .cnt-block:hover {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  border: 0;
+}
+.practice-area .inner h3{ 
+  color:#3c3c3c; 
+font-size:24px; 
+font-weight:500;
+font-family: 'Poppins', sans-serif;
+padding: 10px 0;
+}
+.practice-area .inner p{ 
+  font-size:14px; 
+line-height:22px; 
+font-weight:400;
+}
+.practice-area .inner img{
+display:inline-block;
+}
+
+
+.our-webcoderskull .cnt-block{ 
+ float:left; 
+ width:100%; 
+ background:#fff; 
+ padding:30px 20px; 
+ text-align:center; 
+ border:2px solid #d5d5d5;
+ margin: 0 0 28px;
+}
+.our-webcoderskull .cnt-block figure{
+ width:50px; 
+ height:50px; 
+ border-radius:100%; 
+ display: inline-table;
+ margin-bottom: 15px;
+}
+.our-webcoderskull .cnt-block img{ 
+ width:100px; 
+ height:100px; 
+ margin: auto;
+ padding: 0%;
+}
+.our-webcoderskull .cnt-block h3{ 
+ color:#2a2a2a; 
+ font-size:20px; 
+ font-weight:500; 
+ padding:6px 0;
+ text-transform:uppercase;
+ margin: auto;
+}
+.our-webcoderskull .cnt-block h3 a{
+text-decoration:none;
+color:#2a2a2a;
+}
+.our-webcoderskull .cnt-block h3 a:hover{
+color:#337ab7;
+}
+.our-webcoderskull .cnt-block p{ 
+ color:#2a2a2a; 
+ font-size:13px; 
+ line-height:20px; 
+ font-weight:400;
+}
+.our-webcoderskull .cnt-block .follow-us{
+margin:20px 0 0;
+}
+.our-webcoderskull .cnt-block .follow-us li{ 
+  display:inline-block; 
+  width:auto; 
+  margin:0 5px;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa{ 
+ font-size:24px; 
+ color:#767676;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
+ color:#025a8e;
+}
+
+.fa {
+  width: 30px;
+}
+
+.container {
+  justify-content: center;
+}
+
+a.jcm-top {
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  text-align: center;
+  width: 4%;
+  height: 5%;
+  z-index: 999;
+  display: none; 
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+.cursor_wrap {position: absolute; left: 0; top: 0; width: 30px; height: 30px; pointer-events: none; z-index: 10000; }
+
+.cursor_wrap .cursor {position: fixed; }
+
+.cursor_wrap .cursor .circle { display: block; opacity: 0.15; background-color: rgb(255, 94, 1); width: 30px; height: 30px; border-radius: 50%; -webkit-transition: 0.3s ease-in-out; transition: 0.3s ease-in-out; transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);}
+
+.cursor_wrap .cursor.mouse_hover .circle { background-color: rgb(247, 146, 89);  transform: translate(-50%, -50%) matrix(3, 0, 0, 3, 0, 0); }
+
+header .nav-link{
+  font-size: 18px;
+}
+
+@media (max-width: 991.98px){
+  .container-fluid{
+    position: relative;
+    bottom: 45px;
+    margin: auto;
+  }
+
+  .nav .nav-item{
+    margin: auto;
+  }
+
+  div.col-md-8 iframe#youvideo{
+    margin: auto;
+    padding: 0%;
+    width: 400px;
+  }
+
+  a.jcm-top{
+    width: 60px;
+    bottom: 8%;
+  }
+
+  #pedia-what h1{
+    font-size: 3.7vw;
+    font-weight: bold;
+    padding-bottom: 7px;
+  }
+  
+  #pedia-what p{
+    font-size: 3.3vw;
+  }
+
+  footer{
+    height: 70px;
+  }
+
+  footer p{
+    padding: 14px;
+  }
+
+} 
+
+
+
