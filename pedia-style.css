@@ -49,7 +49,7 @@ section{
 #pedia-what{
   padding-top: 18px;
   padding-bottom: 5px;
-  margin-left: 10.8%;
+  margin-left: 6.8%;
 }
 
 h1{
@@ -447,7 +447,7 @@ footer p{
 
   #pedia-choice{
     height: auto;
-  } 
+  }
 
   .pedia-footer{
     position: absolute;
@@ -467,9 +467,9 @@ footer p{
     height: 460px;
   }
 
-} 
+}
 
- @media (min-width: 1850px){
+@media (min-width: 1850px){
 
   .accordion-button{
     font-size: 1.3vw;
@@ -492,7 +492,6 @@ footer p{
   }
 
 }
-
 
 @media (max-width: 800px) {
   #gallery{
