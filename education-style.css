@@ -1,6 +1,11 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+
 /* 아래 NAV 폰트 */
 @font-face {
-  src: url("font/HancomMalangMalang-Regular.ttf");
+  src: url("./font/HancomMalangMalang-Regular.ttf");
   font-family: "Malang-Regular";
 }
 
@@ -13,7 +18,6 @@
 
 .nav .nav-item .nav-link{
   font-family: "Malang-Regular";
-  font-size: 1.3vw;
 }
 
 .container {
@@ -24,12 +28,11 @@
 body{
   padding: 0;
   margin: 0;
-  font-size: 16px!important;
 }
 
 /* 네비 */
 .nav-item{
-  padding: 0 2.04%!important;
+  padding: 0 2%;
 }
 
 .navbar-light .navbar-nav .nav-link.active{
@@ -40,43 +43,44 @@ body{
   margin: 0;
 }
 
-#pedia-what{
-  padding-top: 18px;
-  padding-bottom: 5px;
-  margin: 0;
+.nav-line{
+  margin: 10px 0;
+  border: solid 0.5px #7F7F7F;
 }
 
-#pedia-what h1{
+#pedia-what1{
+  font-family: 'BBTreeGR';
+  width: 75%;
+  margin: auto;
+  padding-top: 18px;
+  padding-bottom: 0px;
+  margin-left: 7%;
+}
+
+#pedia-what1 h1{
   font-family: 'BBTreeGR';
   font-size: 1.7vw;
   font-weight: bold;
   padding-bottom: 7px;
+  margin-top: 0%;
 }
 
-#pedia-what p{
-  font-family: 'BBTreeGR';
+#pedia-what1 p{
   font-size: 1.3vw;
 }
 
-#pedia-what{
-  margin: 0 7%;
+hr:not([size]) {
+  height: 0px;
 }
 
-.nav-line{
-  margin: 10px 0!important;
-  border: solid 0.5px #7F7F7F;
+.container #pedia-what{
+  margin: 0 0%;
 }
-
-header hr{
-  box-sizing: inherit;
-}
-
 
 
 /* 컨텐츠 안 네비 */
 .under-nav{
   padding: 15px;
-  margin-left: 0;
 }
 
 .under-nav .nav{
@@ -85,6 +89,7 @@ header hr{
   margin: auto;
   border-radius : 5px;
   padding: 5px;
+  padding: 5px 0px;
 }
 
 .under-nav .nav .nav-item{
@@ -102,29 +107,6 @@ header hr{
   font-weight: bold;
 }
 
- /* 푸터 */
- .wrap{
-  min-height: 100%;
-  position: relative;
-}
-
-footer {
-  position: absolute;
-  top: 100%;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-  height: 76px;
-  background-color:rgb(247, 146, 89);
-  color: white;
-  margin-top: 3%;
-}
-
-footer p{
-  padding: 27px 0;
-  font-size: 14px;
-}
-
 
 /* 교육 */
 
@@ -137,12 +119,6 @@ footer p{
   border: white solid 1px;
   padding: 30px;
   margin: auto;
-}
-
-.box #pedia-what{
-  margin: auto;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 
@@ -253,6 +229,31 @@ margin:20px 0 0;
   width: 30px;
 }
 
+
+
+
+
+/* 수정 내용 */
+section{
+  margin: 0;
+}
+
+#pedia-what{
+  padding-top: 18px;
+  padding-bottom: 5px;
+}
+
+h1{
+  font-size: 1.5em;
+  /* font-weight: bold; */
+  padding-bottom: 7px;
+  color: #3c3c3c;
+}
+
+#pedia-what p{
+  font-size: 1.1em;
+}
+
 .container {
   justify-content: center;
 }
@@ -274,7 +275,6 @@ a{
 }
 
 
-
 .cursor_wrap {position: absolute; left: 0; top: 0; width: 30px; height: 30px; pointer-events: none; z-index: 10000; }
 
 .cursor_wrap .cursor {position: fixed; }
@@ -283,8 +283,62 @@ a{
 
 .cursor_wrap .cursor.mouse_hover .circle { background-color: rgb(247, 146, 89);  transform: translate(-50%, -50%) matrix(3, 0, 0, 3, 0, 0); }
 
+@media (max-width: 991.98px){
+  .container-fluid{
+    position: relative;
+    bottom: 45px;
+    margin: auto;
+  }
+
+  .nav .nav-item{
+    margin: auto;
+  }
+
+  a.jcm-top{
+    width: 70px;
+  }
+
+  div.col-md-8 iframe#youvideo{
+    margin: auto;
+    padding: 0%;
+    width: 400px;
+  }
+
+} 
+
+.wrap{
+  min-height: 100%;
+  position: relative;
+}
+
+footer {
+  font-family: none;
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 76px;
+  background-color:rgb(247, 146, 89);
+  color: white;
+  margin-top: 3%;
+}
+
+footer p{
+  padding: 27px 0;
+  font-size: 14px;
+}
+
+
 header .nav-link{
-  font-size: 18px;
+  font-size: 17.7px;
+}
+
+.box h1{
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 36px!important;
 }
 
 @media (max-width: 991.98px){
@@ -309,13 +363,13 @@ header .nav-link{
     bottom: 8%;
   }
 
-  #pedia-what h1{
+  #pedia-what1 h1{
     font-size: 3.7vw;
     font-weight: bold;
     padding-bottom: 7px;
   }
   
-  #pedia-what p{
+  #pedia-what1 p{
     font-size: 3.3vw;
   }
 
@@ -328,6 +382,3 @@ header .nav-link{
   }
 
 } 
-
-
-
